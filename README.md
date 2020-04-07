@@ -26,7 +26,21 @@ python3 app.py;
 3. Stop and deactivate virtualenv
 
 ```bash
-Ctrl + c
-deactivate
+Ctrl+c
+deactivate;
 ```
 
+## Docker
+
+1. Setup `.env` file (To see the values required check [.env.sample](.env.sample))
+2. Start Service
+
+```shell
+docker-compose up;
+```
+
+3. Stop Service
+
+```shell
+Ctrl+c
+```
