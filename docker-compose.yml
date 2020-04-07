@@ -1,4 +1,4 @@
-version: '3'
+version: '3.7'
 services:
   docker-flask:
       container_name: ''
@@ -26,3 +26,11 @@ services:
             cpus: '0.25'
             memory: 20M
         replicas: 2
+        restart_policy:
+          condition: any
+          delay: 5s
+          window: 120s
+        update_config:
+          parallelism: 1
+          delay: 10s
+          order: start-first
