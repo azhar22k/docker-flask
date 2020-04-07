@@ -1,8 +1,9 @@
 version: '3'
 services:
   docker-flask:
-      container_name: docker-flask
+      container_name: ''
       build: .
+      image: mohdazharkhan/docker-flask
       volumes:
         - .:/usr/src/app
         - $HOME/.aws:/root/.aws
