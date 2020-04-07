@@ -12,3 +12,9 @@ services:
       tty: true
       env_file:
         - .env
+      healthcheck:
+        test: curl --fail http://localhost:5000/health
+        interval: 30s
+        timeout: 5s
+        retries: 2
+  
