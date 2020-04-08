@@ -34,3 +34,5 @@ services:
           parallelism: 1
           delay: 10s
           order: start-first
+      labels:
+        kompose.service.type: clusterip
